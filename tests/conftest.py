@@ -20,6 +20,14 @@ def override_get_db():
     finally:
         db.close()
 
+@pytest.fixture
+def session():
+    db = TestingSessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
 class DummyModel:
     def predict(self, X):
         return np.array([1])   
@@ -77,3 +85,6 @@ def post_prediction(client, auth_headers):
     res = client.post("/predict/", json=post, headers=auth_headers)
 
     return res
+
+
+
