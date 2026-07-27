@@ -222,3 +222,5 @@ data/
 # deep learning models
 
 *.pt
+
+github/
