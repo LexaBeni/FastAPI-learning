@@ -8,7 +8,6 @@ on:
 jobs:
   tests:
     environment: testing
-    deployment: false
     runs-on: ubuntu-latest
 
     env:
