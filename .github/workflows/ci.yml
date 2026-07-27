@@ -88,5 +88,5 @@ jobs:
           context: .
           push: true
           tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-fake-news:1.0
-          ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-fake-news:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-fake-news:1.0
+            ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-fake-news:latest
